@@ -178,10 +178,27 @@ body {
   color: var(--secondary-text-color);
 }
 
-.skills__text {
-  text-align: justify;
-
-  color: var(--secondary-text-color);
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.skills-items {
+  background-color: var(--border-color);
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 0 75px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 5px;
+  display: flex;
+}
+.skills-items svg {
+  fill: var(--primary-text-color);
+}
+.skills-items span {
+  font-size: 10px;
 }
 /* ----------- INTRO AND SKILLS STYLES -------------- */
 
