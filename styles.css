@@ -17,6 +17,10 @@ body {
   --text-decoration-color: #ff9a00;
 }
 
+li {
+  color: var(--text-decoration-color);
+}
+
 .container {
   margin: 0 auto;
   padding: 0 30px;
@@ -198,6 +202,7 @@ body {
   fill: var(--primary-text-color);
 }
 .skills-items span {
+  color: var(--secondary-text-color);
   font-size: 10px;
 }
 /* ----------- INTRO AND SKILLS STYLES -------------- */
@@ -260,6 +265,13 @@ body {
   color: var(--secondary-text-color);
 }
 
+.experiences__company-project-responsibilities:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.experiences__company-project-responsibility-desc {
+  color: var(--secondary-text-color);
+}
 .additional-info {
   flex: 1 1 40%;
 }
@@ -274,6 +286,10 @@ body {
   margin-bottom: 20px;
 }
 
+.additional-info__education-university:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .additional-info__education-university-durability {
   margin-bottom: 10px;
   font-size: 15px;
@@ -283,7 +299,6 @@ body {
 }
 
 .additional-info__education-university-speciality {
-  margin-bottom: 10px;
   text-align: left;
 
   color: var(--primary-text-color);
@@ -293,17 +308,37 @@ body {
   color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
+.extra__info:not(:last-child) {
   margin-bottom: 20px;
 }
-
-.additional-info__languages-header {
+.extra__info-header {
   margin-bottom: 20px;
   text-align: left;
   color: var(--secondary-text-color);
 }
+.extra__info-list {
+  padding-left: 20px;
+}
 
-.additional-info__languages-item {
+.extra__info-item span {
   color: var(--secondary-text-color);
 }
+
+.extra__info-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.additional-info__hobbies-list {
+  list-style: none;
+  padding-left: 5px;
+}
+.additional-info__hobbies-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.additional-info__hobbies-icon {
+  fill: var(--icon-color);
+}
+
 /* ----------- INTRO AND SKILLS STYLES -------------- */
