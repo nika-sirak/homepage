@@ -1,10 +1,625 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main class="resume">
+      <!-- HEADER -->
+      <div class="container">
+        <div class="resume__block">
+          <section class="header">
+            <h1 class="contact-info__header">Veronika Sirak</h1>
+            <h2 class="contact-info__sub-header">Front End Developer</h2>
+
+            <div class="contact_info_container fh">
+              <address class="contact-address">
+                <ul class="contact-info__block">
+                  <li class="contact-info__item">
+                    <a
+                      href="mailto:7nicka@gmail.com"
+                      rel="author"
+                      class="contact-info__link"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg
+                          class="contact-info__item-icon"
+                          width="20"
+                          height="20"
+                        >
+                          <use href="./assets/sprite.svg#email"></use>
+                        </svg>
+                      </div>
+                      <span>7nicka@gmail.com</span>
+                    </a>
+                  </li>
+                  <li class="contact-info__item">
+                    <a
+                      href="tel:+380954014738"
+                      rel="author"
+                      class="contact-info__link"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg
+                          class="contact-info__item-icon"
+                          width="20"
+                          height="20"
+                        >
+                          <use href="./assets/sprite.svg#phone"></use>
+                        </svg>
+                      </div>
+                      <span>+380 95 401 4738</span>
+                    </a>
+                  </li>
+                  <li class="contact-info__item">
+                    <a
+                      href="https://goo.gl/maps/Ph9VTFo8CGZFbQY96"
+                      rel="author"
+                      target="_blank"
+                      class="contact-info__link"
+                    >
+                      <div class="contact-info__item-icon-wrapper">
+                        <svg
+                          class="contact-info__item-icon"
+                          width="20"
+                          height="20"
+                        >
+                          <use href="./assets/sprite.svg#map"></use>
+                        </svg>
+                      </div>
+                      <span>Figueira da Foz, Portugal</span>
+                    </a>
+                  </li>
+                </ul>
+              </address>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar"
+                  srcset="assets/avatar1.jpg 1x, assets/avatar@2x.jpg 2x"
+                  src="assets/avatar1.jpg"
+                  alt="Avatar"
+                />
+              </div>
+
+              <ul class="contact-info__block">
+                <li class="contact-info__item">
+                  <a
+                    href="https://www.linkedin.com/in/veronika-sirak/"
+                    rel="author"
+                    target="_blank"
+                    class="contact-info__link"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <svg
+                        class="contact-info__item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#linkedin"></use>
+                      </svg>
+                    </div>
+                    <span>Veronika Sirak</span>
+                  </a>
+                </li>
+                <li class="contact-info__item">
+                  <a
+                    href="https://veronika-sirak.netlify.app/"
+                    rel="author"
+                    target="_blank"
+                    class="contact-info__link"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <svg
+                        class="contact-info__item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#web-page"></use>
+                      </svg>
+                    </div>
+                    <span>Portfolio</span>
+                  </a>
+                </li>
+                <li class="contact-info__item">
+                  <a
+                    href="https://www.codewars.com/users/nika-sirak"
+                    rel="author"
+                    target="_blank"
+                    class="contact-info__link"
+                  >
+                    <div class="contact-info__item-icon-wrapper">
+                      <svg
+                        class="contact-info__item-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#codewars"></use>
+                      </svg>
+                    </div>
+                    <span>niika-sirak</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- INTRO -->
+      <div class="container">
+        <div class="resume__block">
+          <section class="intro">
+            <h3 class="visually-hidden">About myself</h3>
+            <div class="intro__icon-wrapper">
+              <svg
+                class="intro__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
+                ></path>
+              </svg>
+            </div>
+            <p class="intro_text">
+              Hi! I'm Veronika Sirak, front-end web developer from sunny
+              Portugal. After working as a statistics tutor for almost seven
+              years, I decided to pursue a career in web development. I'm
+              constantly busy diving into the world of JavaScript, dedicating
+              most of my time to learning and mastering it. I enjoy the creative
+              process of building awesome web projects and improving my skills.
+              It's important for me to have the opportunity to learn at Binary
+              Studio Academy because you provide a wide range of knowledge,
+              practical tasks, and expert support to help me become a
+              professional in my field.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- SKILLS  -->
+      <div class="container">
+        <div class="resume__block">
+          <section class="skills">
+            <h3 class="skills__header">Skills</h3>
+            <ul class="skills-list">
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#html5"></use>
+                </svg>
+                <span>HTML</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#css"></use>
+                </svg>
+                <span>CSS</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#sass"></use>
+                </svg>
+                <span>Sass</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#javascript"></use>
+                </svg>
+                <span>JavaScript</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#react"></use>
+                </svg>
+                <span>React</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#redux"></use>
+                </svg>
+                <span>Redux</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#nodejs"></use>
+                </svg>
+                <span>Node.js</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#express"></use>
+                </svg>
+                <span>Express</span>
+              </li>
+              <li class="skills-items">
+                <svg width="30" height="30">
+                  <use href="./assets/sprite.svg#mongodb"></use>
+                </svg>
+                <span>MongoDB</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <!-- EXPERIENCE BLOCK -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="main-info fh">
+            <!-- Experiences -->
+            <section class="experiences">
+              <h3 class="experiences__header">Experience</h3>
+              <div class="experiences__company">
+                <div class="experiences__company-header">
+                  <span class="experiences__company-header-durability"
+                    >2022/2023</span
+                  >
+                  <h4 class="experiences__company-header-name">
+                    IT School GoIT
+                  </h4>
+                </div>
+
+                <div class="experiences__company-project">
+                  <span class="experiences__company-project-role">Student</span>
+                  <h4 class="experiences__company-project-name">
+                    Books-reader (student project)
+                  </h4>
+                  <ul class="experiences__company-project-responsibilities">
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Implemented the UI of the books-reader app using React,
+                        Redux.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Implemented forms for logging in, signing in, adding
+                        books to the user's library, and validating user input.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Created a training page with a timer functionality,
+                        allowing users to track their study or reading time.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Integrated with the backend APIs developed by the
+                        backend team.
+                      </p>
+                    </li>
+                  </ul>
+                  <h4 class="experiences__company-project-name">
+                    Movie-Search App (pet project)
+                  </h4>
+                  <ul class="experiences__company-project-responsibilities">
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Designed and implemented the UI of the movie search web
+                        app using React components.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Implemented client-server communication using AJAX to
+                        fetch movie data from the REST API.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Handled errors, providing informative error messages.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Created detailed movie page that allow users to view
+                        additional information.
+                      </p>
+                    </li>
+                  </ul>
+                  <h4 class="experiences__company-project-name">
+                    The Tasteat (pet project)
+                  </h4>
+                  <ul class="experiences__company-project-responsibilities">
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Implemented the UI of the restaurant website using HTML
+                        and CSS.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Developed responsive layout
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Enhanced UX by implementing interactive features with JS
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experiences__company">
+                <div class="experiences__company-header">
+                  <span class="experiences__company-header-durability"
+                    >2016/2022</span
+                  >
+                  <h4 class="experiences__company-header-name">Freelance</h4>
+                </div>
+
+                <div class="experiences__company-project">
+                  <span class="experiences__company-project-role"
+                    >Statistics Tutor</span
+                  >
+                  <ul class="experiences__company-project-responsibilities">
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Provided one-on-one tutoring sessions to students,
+                        explaining statistical concepts.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Assisted students in solving statistical problems,
+                        guiding them through the process.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Assisted students in enhancing their performance on
+                        tests, projects, and final exams.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experiences__company">
+                <div class="experiences__company-header">
+                  <span class="experiences__company-header-durability"
+                    >2015/2016</span
+                  >
+                  <h4 class="experiences__company-header-name">Oberig</h4>
+                </div>
+
+                <div class="experiences__company-project">
+                  <span class="experiences__company-project-role"
+                    >School Psychologist
+                  </span>
+                  <ul class="experiences__company-project-responsibilities">
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Provided multi-disciplinary therapies to aid positive
+                        behavioral changes in the classroom.
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="experiences__company-project-responsibility-desc"
+                      >
+                        Collaborated with teachers, and parents to develop
+                        individualized intervention strategies to support
+                        student's social and emotional development.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!-- ADDITIONAL INFO -->
+            <section class="additional-info fv">
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Education</h3>
+                  <div class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                      >2022</span
+                    >
+                    <h4
+                      class="additional-info__education-university-speciality"
+                    >
+                      Full Stack Developer
+                    </h4>
+                    <p class="additional-info__education-university-name">
+                      IT School GoIT
+                    </p>
+                  </div>
+                  <div class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                      >2014/2015</span
+                    >
+                    <h4
+                      class="additional-info__education-university-speciality"
+                    >
+                      Master Degree Psychologist
+                    </h4>
+                    <p class="additional-info__education-university-name">
+                      Lviv National University
+                    </p>
+                  </div>
+                  <div class="additional-info__education-university">
+                    <span
+                      class="additional-info__education-university-durability"
+                      >2010/2014</span
+                    >
+                    <h4
+                      class="additional-info__education-university-speciality"
+                    >
+                      Bachelor Degree Psychologist
+                    </h4>
+                    <p class="additional-info__education-university-name">
+                      Uzhhorod National University
+                    </p>
+                  </div>
+                </div>
+
+                <div class="additional-info__languages extra__info">
+                  <h3
+                    class="additional-info__languages-header extra__info-header"
+                  >
+                    Languages
+                  </h3>
+                  <ul class="additional-info__languages-list extra__info-list">
+                    <li
+                      class="additional-info__languages-item extra__info-item"
+                    >
+                      <span>Ukrainian - Native</span>
+                    </li>
+                    <li
+                      class="additional-info__languages-item extra__info-item"
+                    >
+                      <span>English - Upper Intermediate</span>
+                    </li>
+                    <li
+                      class="additional-info__languages-item extra__info-item"
+                    >
+                      <span>Portuguese - Pre Intermediate</span>
+                    </li>
+                    <li
+                      class="additional-info__languages-item extra__info-item"
+                    >
+                      <span>Hungarian - Basic</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="additional-info__hobbies extra__info">
+                  <h3
+                    class="additional-info__hobbies-header extra__info-header"
+                  >
+                    Hobbies
+                  </h3>
+                  <ul class="additional-info__hobbies-list extra__info-list">
+                    <li class="additional-info__hobbies-item extra__info-item">
+                      <svg
+                        class="additional-info__hobbies-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#language"></use>
+                      </svg>
+                      <span>Learning foreign languages</span>
+                    </li>
+                    <li class="additional-info__hobbies-item extra__info-item">
+                      <svg
+                        class="additional-info__hobbies-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#paint"></use>
+                      </svg>
+                      <span>Painting</span>
+                    </li>
+                    <li class="additional-info__hobbies-item extra__info-item">
+                      <svg
+                        class="additional-info__hobbies-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#plant"></use>
+                      </svg>
+                      <span>Nurturing plants</span>
+                    </li>
+
+                    <li class="additional-info__hobbies-item extra__info-item">
+                      <svg
+                        class="additional-info__hobbies-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#camping"></use>
+                      </svg>
+                      <span>Camping</span>
+                    </li>
+                    <li class="additional-info__hobbies-item extra__info-item">
+                      <svg
+                        class="additional-info__hobbies-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#codewars"></use>
+                      </svg>
+                      <span>Code Wars</span>
+                    </li>
+                    <li class="additional-info__hobbies-item extra__info-item">
+                      <svg
+                        class="additional-info__hobbies-icon"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="./assets/sprite.svg#nutrition"></use>
+                      </svg>
+                      <span>Nutritionology</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="additional-info__facts extra__info">
+                  <h3 class="additional-info__facts-header extra__info-header">
+                    Fun facts about me
+                  </h3>
+                  <ul class="additional-info__facts-list extra__info-list">
+                    <li class="additional-info__facts-item extra__info-item">
+                      <span> Coffee is not my cup of tea</span>
+                    </li>
+                    <li class="additional-info__facts-item extra__info-item">
+                      <span>Absolutely love cats</span>
+                    </li>
+                    <li class="additional-info__facts-item extra__info-item">
+                      <span> Obsessed with hydrangeas</span>
+                    </li>
+                    <li class="additional-info__facts-item extra__info-item">
+                      <span> Hate and love 'this' at the same time</span>
+                    </li>
+                    <li class="additional-info__facts-item extra__info-item">
+                      <span>Master the art of solving a Rubik's Cube</span>
+                    </li>
+                    <li class="additional-info__facts-item extra__info-item">
+                      <span
+                        >I’m on a seafood diet. I see food and I eat it.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
