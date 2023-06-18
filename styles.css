@@ -37,16 +37,16 @@ body {
 
 .resume {
   margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
   max-width: 900px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 1px 1px 7px 7px #f5f5f5;
 }
 
 .resume__block {
-  border-bottom: 3px solid var(--border-color);
-  padding-bottom: 30px;
   margin-bottom: 15px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid var(--border-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -76,15 +76,17 @@ body {
 }
 
 .contact-info__header {
-  color: var(--primary-text-color);
   margin-bottom: 15px;
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
+
+  color: var(--primary-text-color);
 }
 
 .contact-info__sub-header {
-  color: var(--secondary-text-color);
   margin-bottom: 30px;
+
+  color: var(--secondary-text-color);
 }
 
 .contact-info__block {
@@ -94,14 +96,25 @@ body {
 }
 
 .contact-info__block--center {
+  flex: 0.2 1 auto;
   justify-content: center;
 }
 
 .contact-info__item {
-  color: var(--secondary-text-color);
-  text-decoration: none;
   display: flex;
   justify-content: start;
+  align-items: center;
+
+  font-style: normal;
+  text-decoration: none;
+
+  color: var(--secondary-text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-info__item:hover,
+.contact-info__item:focus {
+  color: var(--text-decoration-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -109,27 +122,24 @@ body {
 }
 
 .contact-info__item-icon-wrapper {
-  margin-right: 10px;
-  width: 20px;
   display: flex;
   justify-content: center;
-}
-
-.contact-info__item-icon path {
-  fill: var(--icon-color);
+  margin-right: 10px;
+  width: 20px;
 }
 
 .contact-info__item-icon {
   height: 1.1428rem;
   vertical-align: text-bottom;
+  fill: currentColor;
 }
 
 .contact-info__avatar {
-  border-radius: 50%;
   width: 100px;
   height: 100px;
   object-fit: cover;
   border: 3px solid;
+  border-radius: 50%;
   border-color: var(--text-decoration-color);
 }
 /* ----------- CONTACT INFO STYLES -------------- */
@@ -141,10 +151,10 @@ body {
 }
 
 .intro__icon-wrapper {
-  margin-right: 30px;
-  width: 30px;
   display: flex;
   justify-content: center;
+  width: 30px;
+  margin-right: 30px;
 }
 
 .intro__icon {
@@ -162,14 +172,16 @@ body {
 }
 
 .skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
   margin-bottom: 15px;
+  text-align: center;
+
+  color: var(--secondary-text-color);
 }
 
 .skills__text {
-  color: var(--secondary-text-color);
   text-align: justify;
+
+  color: var(--secondary-text-color);
 }
 /* ----------- INTRO AND SKILLS STYLES -------------- */
 
@@ -181,24 +193,28 @@ body {
 }
 
 .experiences__header {
-  color: var(--secondary-text-color);
-  text-align: left;
   margin-bottom: 20px;
+  text-align: left;
+
+  color: var(--secondary-text-color);
 }
 
 .experiences__company-header-durability {
-  color: var(--durability-text-color);
-  text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
+  text-align: left;
+
+  color: var(--durability-text-color);
 }
 
 .experiences__company-header-name {
-  color: var(--primary-text-color);
+  margin-bottom: 20px;
+
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
   text-align: left;
-  margin-bottom: 20px;
+
+  color: var(--primary-text-color);
 }
 
 .experiences__company-project {
@@ -207,21 +223,24 @@ body {
 }
 
 .experiences__company-project-role {
-  color: var(--durability-text-color);
-  text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
+  text-align: left;
+
+  color: var(--durability-text-color);
 }
 
 .experiences__company-project-name {
-  color: var(--primary-text-color);
-  text-align: left;
   margin-bottom: 10px;
+  text-align: left;
+
+  color: var(--primary-text-color);
 }
 
 .experiences__company-project-responsibilities {
-  color: var(--secondary-text-color);
   padding-left: 20px;
+
+  color: var(--secondary-text-color);
 }
 
 .additional-info {
@@ -239,16 +258,18 @@ body {
 }
 
 .additional-info__education-university-durability {
-  color: var(--durability-text-color);
-  text-align: left;
   margin-bottom: 10px;
   font-size: 15px;
+  text-align: left;
+
+  color: var(--durability-text-color);
 }
 
 .additional-info__education-university-speciality {
-  color: var(--primary-text-color);
-  text-align: left;
   margin-bottom: 10px;
+  text-align: left;
+
+  color: var(--primary-text-color);
 }
 
 .additional-info__education-university-name {
@@ -260,9 +281,9 @@ body {
 }
 
 .additional-info__languages-header {
-  color: var(--secondary-text-color);
-  text-align: left;
   margin-bottom: 20px;
+  text-align: left;
+  color: var(--secondary-text-color);
 }
 
 .additional-info__languages-item {
