@@ -56,16 +56,21 @@ li {
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
-  .contact_info_container {
-    align-items: center;
+  .contact-info__block--center {
+    order: -1;
+    min-width: 100%;
   }
-
-  .contact-info__block:not(:last-child) {
+  .contact-info__avatar {
+    margin: 0 auto;
+  }
+  /* .contact-info__block:not(:last-child) {
     margin-bottom: 20px;
-  }
+  } */
 
   .experiences {
     margin-right: 0;
@@ -96,11 +101,12 @@ li {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
 }
 
 .contact-info__block--center {
   flex: 0.2 1 auto;
+  /* order: 0; */
   justify-content: center;
 }
 
@@ -121,9 +127,9 @@ li {
   color: var(--text-decoration-color);
 }
 
-.contact-info__item:not(:last-child) {
+/* .contact-info__item:not(:last-child) {
   margin-bottom: 20px;
-}
+} */
 
 .contact-info__item-icon-wrapper {
   display: flex;
@@ -297,6 +303,9 @@ li {
 
   color: var(--durability-text-color);
 }
+.experiences__company-project-responsibilities li:not(:last-child) {
+  margin-bottom: 5px;
+}
 
 .additional-info__education-university-speciality {
   text-align: left;
@@ -325,7 +334,7 @@ li {
 }
 
 .extra__info-item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .additional-info__hobbies-list {
