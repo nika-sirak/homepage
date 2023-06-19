@@ -275,6 +275,16 @@ li {
   color: var(--primary-text-color);
 }
 
+.experiences__company-project-link {
+  color: var(--secondary-text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.experiences__company-project-link:hover,
+.experiences__company-project-link:focus {
+  color: var(--text-decoration-color);
+}
+
 .experiences__company-project-responsibilities {
   padding-left: 20px;
 
